@@ -25,14 +25,26 @@
     }
 
     input{
-        width: 35%;
+        &:-webkit-autofill{
+            -webkit-text-fill-color: $dark !important;
+            background-color: $light !important;
+        }
+        
+        &#fullName{
+            width: 30%;
+        }
+
+        &#email{
+            width: 45%;
+        }
     }
 
     input.form-control, textarea.form-control{
         background-color: $light;
         border: 2px solid transparent;
-        border-radius: 15px;
+        border-radius: 0.75rem;
         transition: all .3s ease-out;
+        padding-left: 0.75rem;
 
         &::placeholder{
             color: $dark;

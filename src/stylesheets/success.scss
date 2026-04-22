@@ -1,0 +1,16 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+@use 'custom' as *;
+
+
+
+#successMessage{
+    #successCheck{
+        font-size: 12rem;
+        color: $green;
+    }
+
+    .btn{
+        width: 13rem;
+    }
+}

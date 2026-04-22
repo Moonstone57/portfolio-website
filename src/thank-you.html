@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Me - Katie Aland Portfolio</title>
-  <link rel="stylesheet" href="./stylesheets/main.scss">
-  <link rel="icon" type="image/png" href="/images/portfolio-favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Message Submission - Katie Aland Portfolio</title>
+    <link rel="stylesheet" href="./stylesheets/main.scss">
+    <link rel="icon" type="image/png" href="/images/portfolio-favicon.png">
 </head>
-
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark p-2">
     <div class="container-fluid">
@@ -36,44 +35,16 @@
   </nav>
 
   <main>
-    <section id="contactSection" class="container-fluid">
-      <div class="heroImgContainer m-4 row align-items-center justify-content-evenly justify-content-xl-center">
-        <div class="col-4 my-4 d-none d-lg-flex">
-          <img class="img-fluid w-100 h-auto" src="images/HeadShotRedWall.jpg" alt="Katie Aland playing a violin">
-        </div>
-
-        <article class="heroText col-12 col-lg-7 mt-4 mt-lg-0 text-md-start">
-          <div class="text-center text-lg-start mb-4">
-            <h1 class="fw-bold">Contact Me</h1>
-            <h2>Interested in working with me? Get in touch!</h2>
-          </div>
-
-          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="w-100">
-            <input type="hidden" name="form-name" value="contact">
-
-            <p class="d-none">
-              <label>Don’t fill this out if you're human: <input name="bot-field"></label>
-            </p>
-
-            <div class="mb-3">
-              <label for="fullName" class="form-label fs-4">Full Name</label>
-              <input type="text" name="fullName" class="form-control p-2" id="fullName" placeholder="Ex. John Doe" required aria-required="true">
+    <section id="contactSection" class="container-fluid pb-5">
+        <article id="successMessage" class="m-3 text-center">
+            <i id="successCheck" class="bi bi-check-circle"></i>
+            <h1>Success!</h1>
+            <p class="pb-3">Your message has been sent. I will send you a response in 2-3 business days.</p>
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+                <a class="btn" href="index.html">Go to Home</a>
+                <a class="btn" href="projects.html">View My Projects</a>
             </div>
-
-            <div class="mb-3">
-              <label for="email" class="form-label fs-4">Email</label>
-              <input type="email" name="email" class="form-control p-2" id="email" placeholder="Ex. johndoe@email.com" required aria-required="true">
-            </div>
-
-            <div class="mb-3">
-              <label for="contactMessage" class="form-label fs-4">Message</label>
-              <textarea name="contactMessage" class="form-control p-2" id="contactMessage" rows="3" placeholder="Write your message here..." required aria-required="true"></textarea>
-            </div>
-
-            <button type="submit" class="btn w-25 mt-3 fw-semibold">Submit</button>
-          </form>
         </article>
-      </div>
     </section>
   </main>
 
