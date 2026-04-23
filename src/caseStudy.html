@@ -9,7 +9,9 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark p-2">
+  <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to content</a>
+  
+  <nav aria-label="primary" class="navbar navbar-expand-lg navbar-dark p-2">
     <div class="container-fluid">
       <a class="navbar-brand logoContainer" href="index.html">
         <img src="images/portfolio-logo.png" class="img-fluid p-1" alt="Katie Aland Logo">
@@ -35,13 +37,13 @@
     </div>
   </nav>
   
-  <main id="caseStudyContent">
+  <main id="caseStudyContent" aria-labelledby="alandAccelerandoTitle">
     <section id="projectImgContainer">
       <img class="img-fluid colorOverlay" src="images/caseStudy.png" alt="Aland Accelerando Website Home Page">
     </section>
 
     <section id="caseStudyOverviewSection">
-      <h1 class="sectionTitle">Aland Accelerando Figma Prototype</h1>
+      <h1 id="alandAccelerandoTitle" class="sectionTitle">Aland Accelerando Figma Prototype</h1>
 
       <nav aria-label="breadcrumb" class="px-3 pt-4 m-0">
         <ol class="breadcrumb m-0 p-0">
@@ -68,8 +70,8 @@
       </article>
     </section>
 
-    <section>
-      <h2 class="sectionTitle">Color Palette</h2>
+    <section aria-labelledby="colorPaletteTitle">
+      <h2 id="colorPaletteTitle" class="sectionTitle">Color Palette</h2>
       <article id="colorPaletteCards" class="container py-5 d-flex flex-column align-items-center">
         <div class="card">
           <h3 class="card-title">Primary Colors</h3>
@@ -100,16 +102,17 @@
       </article>
     </section>
 
-    <section id="componentSection">
-      <h2 class="sectionTitle">Typography & Compoments</h2>
+    <section id="componentSection" aria-labelledby="typographyTitle">
+      <h2 id="typographyTitle" class="sectionTitle">Typography & Compoments</h2>
       <article id="componentCards" class="container px-5 py-5 d-flex w-100 gap-5 justify-content-center">
         <img src="images/spectralFontFamily.jpg" class="img-fluid w-50 rounded" alt="Spectral Font Family Text Hierarchy Styles for Aland Accelerando Website">
         <img src="images/components.jpg" class="img-fluid w-50 rounded" alt="logo, icons, and button styles for Aland Accelerando Website">
       </article>
     </section>
 
-    <section>
-      <h2 class="sectionTitle">Usability Testing</h2>
+    <section aria-labelledby="testingTitle">
+      <h2 id="testingTitle" class="sectionTitle">Usability Testing</h2>
+      
       <article class="container my-5 py-1">
         <h3 class="text-center">Results of Usability Testing</h3>
         <p>I gained many insights from conducting usability testing. I learned that I had designed the hover state incorrectly causing a lot of confusion for my users. When the user clicked on a button, the hover state would still show when they had already clicked the button. This prompted me to change the prototype to only show the hover state when they hover on the inactive or default state. Another change I made was to make it scroll to the next step after picking an option on the lessons page. I made this change based on the feedback I received from surveying my users. Many of my users did not realize there were more sections on the lessons page. Conducting usability testing was very beneficial to my project. Without testing, I would not have identified these issues and been able to make changes.</p>

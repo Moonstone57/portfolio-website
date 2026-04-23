@@ -9,7 +9,9 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark p-2">
+  <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to content</a>
+  
+  <nav aria-label="primary" class="navbar navbar-expand-lg navbar-dark p-2">
     <div class="container-fluid">
       <a class="navbar-brand logoContainer" href="index.html">
         <img src="images/portfolio-logo.png" class="img-fluid p-1" alt="Katie Aland Logo">
@@ -35,7 +37,7 @@
     </div>
   </nav>
 
-  <main>
+  <main id="main-content" aria-labelledby="contactMeTitle">
     <section id="contactSection" class="container-fluid">
       <div class="heroImgContainer m-4 row align-items-center justify-content-evenly justify-content-xl-center">
         <div class="col-4 my-4 d-none d-lg-flex">
@@ -44,7 +46,7 @@
 
         <article class="heroText col-12 col-lg-7 mt-4 mt-lg-0 text-md-start">
           <div class="text-center text-lg-start mb-4">
-            <h1 class="fw-bold">Contact Me</h1>
+            <h1 id="contactMeTitle" class="fw-bold">Contact Me</h1>
             <h2>Interested in working with me? Get in touch!</h2>
           </div>
 

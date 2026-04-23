@@ -41,6 +41,8 @@ h4{
 
         #heroText{
             position: relative;
+            max-width: 10rem;
+            
             .text-primary{
                 color: $primary !important;
             }
@@ -57,32 +59,57 @@ h4{
         #heroImgContainer{
             height: 25rem;
             width: 100%;
+
+            #heroText{
+                max-width: 11rem;
+            }
         }
     }
 
     @include media-breakpoint-up(md){
-        height: 30rem;
+        height: 26rem;
 
         #heroImgContainer{
-            height: 30rem;
+            height: 24rem;
             width: 100%;
+
+            #heroText{
+                max-width: 15rem;
+            }
         }
     }
 
     @include media-breakpoint-up(lg){
-        height: 38rem;
+        height: 33rem;
         
         #heroImgContainer{
-            height: 38rem;
+            height: 33rem;
+
+            #heroText{
+                max-width: 25rem;
+            }
         }
     }
 
     @include media-breakpoint-up(xl){
-        height: 47rem;
+        height: 42rem;
         
         #heroImgContainer{
-            height: 44rem;
+            height: 42rem;
             width: 97%;
+
+            #heroText{
+                max-width: 30rem;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(xxl){
+        height: 52rem;
+        
+        #heroImgContainer{
+            height: 52rem;
+            width: 95%;
         }
     }
 }

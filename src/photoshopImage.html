@@ -9,7 +9,9 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark p-2">
+  <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to content</a>
+  
+  <nav aria-label="primary" class="navbar navbar-expand-lg navbar-dark p-2">
     <div class="container-fluid">
       <a class="navbar-brand logoContainer" href="index.html">
         <img src="images/portfolio-logo.png" class="img-fluid p-1" alt="Katie Aland Logo">
@@ -35,12 +37,12 @@
     </div>
   </nav>
   
-  <main>
+  <main id="main-content" aria-labelledby="photoshopTitle">
     <section id="photoshopContentSection">
       <div id="projectImgContainer">
         <img class="w-100" src="images/doorwayToFantasy.png" alt="Girl in a hospital bed looking through a doorway to a fantasy world. There is a girl in the fantasy world looking over her shoulder through the doorway.">
       </div>
-      <h1 class="sectionTitle">Doorway to Fantasy Photoshop Image Website</h1>
+      <h1 id="photoshopTitle" class="sectionTitle">Doorway to Fantasy Photoshop Image Website</h1>
       <nav aria-label="breadcrumb" class="px-3 pt-4 m-0">
         <ol class="breadcrumb m-0 p-0">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
